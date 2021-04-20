@@ -41,6 +41,7 @@ namespace Pexeso
             this.buttonStart.TabIndex = 0;
             this.buttonStart.Text = "Start Game";
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
             // 
             // buttonQuit
             // 
@@ -50,6 +51,7 @@ namespace Pexeso
             this.buttonQuit.TabIndex = 1;
             this.buttonQuit.Text = "Quit Game";
             this.buttonQuit.UseVisualStyleBackColor = true;
+            this.buttonQuit.Click += new System.EventHandler(this.buttonQuit_Click);
             // 
             // StartScreen
             // 
@@ -59,7 +61,7 @@ namespace Pexeso
             this.Controls.Add(this.buttonQuit);
             this.Controls.Add(this.buttonStart);
             this.Name = "StartScreen";
-            this.Text = "Pexeso";
+            this.Text = "Match Pairs!";
             this.ResumeLayout(false);
 
         }
